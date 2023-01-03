@@ -1,0 +1,23 @@
+{
+  "creditor": {
+    "name": "John Doe",
+    "account": {
+      "accountCode": "IT23A0336844430152923804660",
+      "bicCode": "SELBIT2BXXX"
+    },
+    "address": {
+      "address": null,
+      "city": null,
+      "countryCode": null
+    }
+  },
+  "executionDate": "2019-04-01",
+  "uri": "REMITTANCE_INFORMATION",
+  "description": "Payment invoice 75/2017",
+  "amount": 800,
+  "currency": "EUR",
+  "isUrgent": false,
+  "isInstant": false,
+  "feeType": "SHA",
+  "feeAccountId": "14537780"
+}
