@@ -34,10 +34,12 @@ public class AccountBalanceService {
 		LOGGER.info("Start AccountService - getAccountBalance");
 
 		HttpHeaders header = Utils.createHeaders(apiConnectionConfiguration);
-		String uri = Utils.createUri(apiConnectionConfiguration.getAccountBalance(), "https", apiConnectionConfiguration.getSourceAddress(), accountId, null);
+		String uri = Utils.createUri(apiConnectionConfiguration.getAccountBalance(), "https",
+				apiConnectionConfiguration.getSourceAddress(), accountId, null);
 		response = restTemplate.exchange(uri, HttpMethod.GET, new HttpEntity<>(header), ResponseHeader.class);
 
 		LOGGER.info("End AccountService - getAccountBalance");
+
 		return response;
 	}
 }
