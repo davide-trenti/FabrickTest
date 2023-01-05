@@ -1,4 +1,4 @@
-package com.fabricktest.models;
+package com.fabricktest.models.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,10 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ResponseHeader<V, T> {
-
-	private String status;
-	private V errors;
-	private T payload;
+public class Account {
+	
+	private String accountCode;
+	private String bicCode;
 
 }

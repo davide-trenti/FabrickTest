@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fabricktest.models.ResponseHeader;
+import com.fabricktest.models.response.ResponseHeader;
 import com.fabricktest.services.AccountBalanceService;
 
 /*
@@ -31,5 +31,4 @@ public class AccountBalanceController {
 
 		return accountBalanceService.getAccountBalance(accountId);
 	}
-
 }

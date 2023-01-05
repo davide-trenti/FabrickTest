@@ -1,4 +1,4 @@
-package com.fabricktest.exceptions;
+package com.fabricktest.models.response;
 
 import java.time.LocalDateTime;
 
@@ -27,7 +27,7 @@ public class ErrorResponse {
 	public ErrorResponse(HttpStatus httpStatus) {
 		this.httpStatus = httpStatus;
 	}
-
+	
 	public ErrorResponse(HttpStatus httpStatus, String message) {
 		this();
 		this.httpStatus = httpStatus;
